@@ -89,28 +89,33 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
-let password = {
-  numbers: 0,
-  uppercase: true,
-  numeric: true,
-  specialCharacters: true,
-};
+// let password = {
+//   numbers: 0,
+//   uppercase: true,
+//   numeric: true,
+//   specialCharacters: true,
+// };
 
-function getPasswordOptions() {
+// function getPasswordOptions() {
   
-  password.numbers = prompt("Enter password desired length");
-    if (password.numbers < 10 || password.numbers > 64) {
-      alert("Password lenght should be between 10 to 64 characters");
-    }
-  password.uppercase = confirm("Should your password include uppercase characters?");
-  password.numeric = confirm("Should your password include numbers?");
-  password.specialCharacters = confirm("Should your password include special characters?");
-}
+//   password.numbers = prompt("Enter password desired length");
+//     if (password.numbers < 10 || password.numbers > 64) {
+//       alert("Password lenght should be between 10 to 64 characters");
+//     }
+//   password.uppercase = confirm("Should your password include uppercase characters?");
+//   password.numeric = confirm("Should your password include numbers?");
+//   password.specialCharacters = confirm("Should your password include special characters?");
+// }
 
-getPasswordOptions();
+// getPasswordOptions();
 
 
-onsole.log(password);
+// onsole.log(password);
+
+// Adding together arrays
+let superArray = specialCharacters.concat(numericCharacters, lowerCasedCharacters, upperCasedCharacters);
+
+console.log(superArray);
 
 // Function for getting a random element from an array
 function getRandom(arr) {
