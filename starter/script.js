@@ -119,7 +119,9 @@ console.log(superArray);
 
 // Function for getting a random element from an array
 function getRandom(arr) {
-
+  const randomIndex = Math.floor(Math.random() * arr.length);
+  const item = arr[randomIndex];
+  return item;
 }
 
 // Function to generate password with user input
