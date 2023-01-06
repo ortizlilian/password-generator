@@ -89,9 +89,28 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
-function getPasswordOptions() {
+let password = {
+  numbers: 0,
+  uppercase: true,
+  numeric: true,
+  specialCharacters: true,
+};
 
+function getPasswordOptions() {
+  
+  password.numbers = prompt("Enter password desired length");
+    if (password.numbers < 10 || password.numbers > 64) {
+      alert("Password lenght should be between 10 to 64 characters");
+    }
+  password.uppercase = confirm("Should your password include uppercase characters?");
+  password.numeric = confirm("Should your password include numbers?");
+  password.specialCharacters = confirm("Should your password include special characters?");
 }
+
+getPasswordOptions();
+
+
+onsole.log(password);
 
 // Function for getting a random element from an array
 function getRandom(arr) {
