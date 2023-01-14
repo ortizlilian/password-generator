@@ -120,12 +120,13 @@ function getRandom(arr) {
 }
 
 // Empty array to store the password characters as the code appends them.
-const arrayPassword = [];
+
 
 // Function to generate password with user input
 function generatePassword() {
 
-    let i = 0;
+  let arrayPassword = [];
+  let i = 0;
 
     while (arrayPassword.length < password.numbers) { // Perform the loop if the length of password is shorter than what the user wants
       // Checks if user wants special characters, then push them to the password array. Also checks if array is shorter than the number set by the user.
@@ -149,7 +150,8 @@ function generatePassword() {
       i++;
       }
     } 
-    return arrayPassword.toString();
+    let result = (arrayPassword.toString()).replaceAll(',', ''); // Converts array to string then removes all commas.
+    return result;
 }
 
 // Get references to the #generate element
