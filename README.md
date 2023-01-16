@@ -27,6 +27,12 @@ Finally, the user clicks on the generate password button and the box in the midd
 
 ### Acceptance Criteria
 
+- Allows user to choose passwords length
+- Allows user to choose what types of characters he wants his password to have. The types are lowercase, uppercase, numeric and special characters
+- Code generates a random sequence of characters, containing, at least, one character of each type chose by the user
+- Password is written on the page once user clicks "Generate Password" button
+- Web app is deployed at live URL on Github Pages
+
 
 
 
