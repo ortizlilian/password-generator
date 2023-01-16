@@ -7,7 +7,7 @@ The user generating the password can chose the lenght of the password, as well a
 
 This app runs in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code.
 
-### Deployment
+## Deployment
 
 The app was deployed using Github Pages and can be accessed [here](https://ortizlilian.github.io/password-generator/).
 
@@ -25,7 +25,7 @@ Finally, the user clicks on the generate password button and the box in the midd
 
 ![Password](./assets/password.png)
 
-### Acceptance Criteria
+## Acceptance Criteria
 
 - Allows user to choose passwords length
 - Allows user to choose what types of characters he wants his password to have. The types are lowercase, uppercase, numeric and special characters
